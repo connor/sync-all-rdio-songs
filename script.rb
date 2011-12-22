@@ -38,6 +38,8 @@ tracks    = rdio.call('getTracksInCollection')['result']
 track_ids = []
 t_length  = tracks.length
 
+puts "First, I've got to get all of the tracks in your collection. One sec..."
+
 tracks.each_with_index { |track, i|
   if track['canStream']
     track_ids.push(track['key'].to_s)
@@ -45,6 +47,8 @@ tracks.each_with_index { |track, i|
 }
 
 track_ids = track_ids.join(',').to_s
+
+puts "Great! Now it's time to flag them as available offline. This may take a few moments..."
 
 rdio.call('setAvailableOffline', :keys => track_ids, :offline => true)
 
