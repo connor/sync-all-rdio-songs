@@ -1,6 +1,6 @@
 # Sync all songs in Rdio collection to mobile device
 
-This is a script, based **heavily** off of the [rdio-simple](github.com/rdio/rdio-simple) examples (by [Ian McKellar](https://github.com/ianloic) and [Michael Jackson](https://github.com/mjijackson)), that flags every song in your [Rdio](http://rd.io) account as `sync'd to mobile`. It's something I've wanted for a little while, and is just a personal tool I'd like to share with you all.
+This is a script, based **heavily** off of the [rdio-simple](github.com/rdio/rdio-simple) examples (by [Ian McKellar](https://github.com/ianloic) and contributions from [Michael Jackson](https://github.com/mjijackson)), that flags every song in your [Rdio](http://rd.io) account as `sync'd to mobile`. It's something I've wanted for a little while, and is just a personal tool I'd like to share with you all.
 
 ## How to use it
 
