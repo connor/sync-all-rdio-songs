@@ -33,5 +33,4 @@ puts "Great! Now it's time to flag them as available offline. This may take a fe
 
 rdio.call('setAvailableOffline', :keys => track_ids, :offline => true)
 
-
 puts 'all done :)'
