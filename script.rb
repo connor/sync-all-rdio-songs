@@ -40,11 +40,11 @@ t_length  = tracks.length
 
 puts "First, I've got to get all of the tracks in your collection. One sec..."
 
-tracks.each_with_index { |track, i|
+tracks.each do |track|
   if track['canStream']
     track_ids.push(track['key'].to_s)
   end
-}
+end
 
 track_ids = track_ids.join(',').to_s
 
