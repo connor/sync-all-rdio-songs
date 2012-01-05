@@ -22,12 +22,12 @@ t_length  = tracks.length
 puts "First, I've got to get all of the tracks in your collection. One sec..."
 
 tracks.each do |track|
-  if track['canStream']
+  if track['canDownload']
     track_ids.push(track['key'].to_s)
   end
 end
 
-track_ids = track_ids.join(',').to_s
+track_ids = track_ids.join(',')
 
 puts "Great! Now it's time to flag them as available offline. This may take a few moments..."
 
