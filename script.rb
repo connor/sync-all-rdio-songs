@@ -17,7 +17,6 @@ rdio.complete_authentication(verifier)
 
 tracks    = rdio.call('getTracksInCollection')['result']
 track_ids = []
-t_length  = tracks.length
 
 puts "First, I've got to get all of the tracks in your collection. One sec..."
 
